@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soren Technologies — Software that solves everyday problems</title>
+  <meta name="description" content="Soren Technologies LLC builds simple, privacy-respecting mobile apps. Maker of SparePlate, the office food-sharing app.">
+  <style>
+    :root {
+      --ink: #17222e;
+      --muted: #5b6b7a;
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --accent: #2a5d8f;
+      --spareplate: #639922;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    header { text-align: center; margin-bottom: 56px; }
+    .wordmark {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+    }
+    .wordmark span { color: var(--accent); }
+    .tagline { color: var(--muted); margin-top: 6px; font-size: 1.05rem; }
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 40px 0 16px;
+    }
+    .about { font-size: 1.05rem; }
+    .product {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--card);
+      border: 1px solid #e3e9ef;
+      border-radius: 18px;
+      padding: 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s ease;
+    }
+    .product:hover { box-shadow: 0 6px 18px rgba(23, 34, 46, 0.08); }
+    .product img {
+      width: 72px; height: 72px;
+      border-radius: 16px;
+      flex-shrink: 0;
+    }
+    .product h3 { font-size: 1.2rem; color: var(--spareplate); }
+    .product p { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
+    .badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 3px 10px;
+      background: rgba(99, 153, 34, 0.12);
+      color: var(--spareplate);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .contact {
+      background: var(--card);
+      border: 1px solid #e3e9ef;
+      border-radius: 18px;
+      padding: 22px;
+    }
+    .contact a { color: var(--accent); }
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #e3e9ef;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="wordmark">Soren<span>Technologies</span></div>
+      <p class="tagline">Simple software for everyday problems.</p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p class="about">
+        Soren Technologies LLC is an independent software company building
+        small, focused mobile apps that respect their users — no accounts
+        where none are needed, no ads, no data harvesting. We believe good
+        software, like good food, shouldn't go to waste.
+      </p>
+    </section>
+
+    <section>
+      <h2>Products</h2>
+      <a class="product" href="spareplate/">
+        <img src="spareplate/logo.png" alt="SparePlate app icon">
+        <div>
+          <h3>SparePlate</h3>
+          <p>Share leftover food with colleagues in your building. Good food shouldn't hit the bin.</p>
+          <span class="badge">iOS · in beta</span>
+        </div>
+      </a>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Questions, support, or business inquiries:<br>
+        <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Soren Technologies LLC ·
+      <a href="spareplate/terms.html">SparePlate Terms of Use</a> ·
+      <a href="spareplate/privacy.html">SparePlate Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
