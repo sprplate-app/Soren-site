@@ -21,44 +21,74 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 11, 2026</p>
+    <p class="updated">SparePlate · Last updated: October 16, 2026</p>
 
-    <p>SparePlate is designed to work with as little personal data as possible. There are no accounts, no ads, no analytics trackers, and we never sell data.</p>
+    <p>SparePlate is designed to operate with as little personal data as possible. There are no accounts, no sign-up, no ads, and no analytics trackers, and we never sell your personal data.</p>
+    <p>SparePlate is operated by SOREN TECHNOLOGIES LLC, a Massachusetts limited liability company, which acts as the data controller responsible for the personal data described in this policy. If you have any questions about this policy or how we handle your personal data, you can contact us at <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a>.</p>
 
     <h2>What the app stores</h2>
     <ul>
-      <li><strong>Posts you create</strong> — the food description, category, quantity, location text (e.g. "Kitchen, 3rd floor"), optional photo, and the display name you chose. These are visible to everyone on the same board.</li>
-      <li><strong>Board information</strong> — a board's name and the GPS coordinates of the building, captured once when the board is created.</li>
-      <li><strong>An anonymous device identifier</strong> — a random ID generated on your device, attached to your posts so the app can recognize which posts are yours. It is not linked to your name, Apple ID, or contact details.</li>
-      <li><strong>Votes and reports</strong> — vote counts on posts, and reports you file about posts.</li>
+      <li><strong>Your posts.</strong> The food description, the quantity available, the pickup location, an optional photo, and the name you enter (unverified — see below). Posts are visible to every member of the board. Photos are re-encoded before upload, which removes embedded metadata such as GPS coordinates and capture details (EXIF).</li>
+      <li><strong>Board information.</strong> The board's name, its invite code, and the building's coordinates, each recorded once when the board is created, along with whether the board is code-locked and the anonymous device identifier of its creator.</li>
+      <li><strong>An anonymous device identifier.</strong> A random identifier generated on your device and attached to your posts, to any reports you file, and to boards you create, so the app can recognize which content is yours. Votes are stored as anonymous counts; your individual vote is remembered only on your device. It is not linked to your Apple ID or any contact details.</li>
+      <li><strong>Votes and reports.</strong> Anonymous counts of "Still There" and "Gone" votes on each post (which way you personally voted is remembered only on your device), and any reports you file. Reports are visible to the operator so that they can be reviewed.</li>
+      <li><strong>On your device only.</strong> The list of boards you have joined, the posts you have hidden by reporting them, and your personal impact statistics. This information remains on your device and is not transmitted.</li>
     </ul>
 
+    <h2>The name on your posts</h2>
+    <p>The name shown on your posts is whatever you type. We do not verify it or check it against any identity, and it does not have to be your real name — a nickname or initials work just as well.</p>
+    <p>We still treat it as personal information, because in practice it usually is. A post pairs the name with a specific building, a specific spot inside it, a time, and often a photo, and that combination can identify someone in a small office even when the name on its own would not. Everyone on the board sees all of it, so please choose what you enter with that in mind.</p>
+
     <h2>Location</h2>
-    <p>Your location is used on-device to find nearby boards and to confirm you are at a building when joining or creating a board, and to decide whether to show you a notification. Your location is <strong>not stored or transmitted</strong> — only a board's building coordinates are saved, once, at creation.</p>
+    <p><strong>How your location is used.</strong> SparePlate uses your phone's location, provided by Apple's iOS location services, for three things: to find boards near you, to confirm you are at a building when you join or create a board, and to decide whether to send you a notification. These checks happen on your device. Your location is not sent to us, it is not shared with other users, and we do not store it.</p>
+    <p><strong>What is saved.</strong> When you create a board, the building's coordinates are recorded once and saved with the board. They describe the building, not where you are over time, and, like the rest of the board information, they are stored in the shared database. The pickup spot you type into a post (for example, "kitchen, 3rd floor") is ordinary text that you write yourself, not GPS data. We do not keep any history of where you have been.</p>
+    <p><strong>Your controls.</strong> You can turn off location access for SparePlate at any time in iOS Settings. If you do, features that depend on it, such as finding nearby boards or creating a board, may not work.</p>
+
+    <h2>Notifications</h2>
+    <p>If you enable notifications, members near a building are alerted when new food is posted on that building's board. Notifications are delivered through Apple's Push Notification service, and you may disable them at any time in iOS Settings.</p>
 
     <h2>Where data lives</h2>
-    <p>All shared data is stored in Apple's iCloud (CloudKit) public database and is subject to <a href="https://www.apple.com/legal/privacy/">Apple's privacy protections</a>. Notifications are delivered through Apple's push notification service. We run no servers of our own.</p>
+    <p>Shared data is stored in Apple's iCloud (CloudKit) public database and is subject to <a href="https://www.apple.com/legal/privacy/">Apple's privacy protections</a>. "Public" here means the records are readable by the app on other people's devices, which is what makes a shared board possible — so treat anything you post as visible to other app users, not private. We operate no servers of our own and use no third-party analytics, advertising, or tracking services.</p>
 
     <h2>What we never collect</h2>
     <ul>
-      <li>No names, emails, or phone numbers (the display name is whatever you type, and can be anything).</li>
-      <li>No contacts, no advertising identifiers, no usage analytics.</li>
-      <li>No precise location history.</li>
+      <li>We do not collect email addresses, phone numbers, surnames, or Apple ID information.</li>
+      <li>We do not access your contacts and use no advertising identifiers, usage analytics, or crash-tracking tools.</li>
+      <li>We do not store your location or keep any location history; the only coordinates stored are a board's building coordinates, recorded once when the board is created.</li>
     </ul>
 
-    <h2>Deleting your data</h2>
-    <p>You can delete your own posts in the app at any time. Posts also expire from the feed automatically. For other deletion requests (e.g. removing all records associated with your device), contact us via the link below and we will remove them from the database.</p>
+    <h2>How long we keep things</h2>
+    <p>A post is marked as expired approximately two (2) hours after it is created and stops appearing on the board approximately six (6) hours after it is created. These timings govern display only and do not affect storage. The underlying post record — the food description, the location text, the name you entered, and any photo — remains stored in the database after the post leaves the feed, and is retained until one of the deletion events described below occurs.</p>
+    <p>A post record is permanently deleted only when one of the following occurs:</p>
+    <ul>
+      <li>You delete the post yourself, which you may do at any time, including after it has left the feed.</li>
+      <li>The board's creator deletes the board, which erases the board together with every post on it.</li>
+      <li>We remove the post following a report.</li>
+      <li>The board receives no new post for roughly two (2) months and is treated as abandoned, at which point the board and all of its posts are deleted from the server (deletion completes the next time the board creator's device runs the app; until then the board is hidden from all users).</li>
+    </ul>
+    <p>As a result, if a board remains in regular use, expired posts may remain stored indefinitely even though they are no longer visible in the app. If you would prefer not to leave a post stored, you can delete it at any time, which removes it permanently.</p>
+    <p>Reports are retained until they are reviewed and are periodically purged thereafter.</p>
 
-    <h2>Children</h2>
-    <p>SparePlate is not directed at children under 13 and we do not knowingly collect data from them.</p>
+    <h2>Deleting your data</h2>
+    <p>You may delete any of your own posts within the app at any time, including posts that have already expired and left the feed; doing so permanently removes them from the server for all users. If you created a board, you may delete the entire board, which permanently erases the board and every post it contains for every member.</p>
+    <p>For any other request — for example, removal of all records associated with your device — please email <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a> and we will delete them. Because posts are not linked to your identity, kindly provide sufficient detail for us to locate the relevant records, namely the board name and the name displayed on your posts.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on your jurisdiction, you may have the right to request access to the personal data we hold about you, to have it corrected or deleted, and to object to our use of it. In practice, the only data associated with you is the content you have posted, the name you chose to display on it, and an anonymous device identifier. To exercise any of these rights, email <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a>, and we will respond within 30 days. You will not be discriminated against or otherwise treated differently for exercising these rights.</p>
+
+    <h2>California and Massachusetts residents</h2>
+    <p>We do not sell personal information, and we do not share it for cross-context behavioral advertising. We have no advertising or analytics trackers. Given our size and the very limited data we collect, we believe the California Consumer Privacy Act's business-size thresholds do not currently apply to us. We also do not collect the categories of information covered by Massachusetts' data breach notification law, such as Social Security numbers, driver's license numbers, or financial account numbers. If either of those changes, we will update this policy.</p>
+
+    <h2>Age</h2>
+    <p>SparePlate is intended for adults in a workplace setting and is not directed at anyone under the age of 18. We do not knowingly collect personal data from anyone under 18. If you believe a minor has used the app, please email <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a> and we will delete the associated data.</p>
 
     <h2>Changes</h2>
-    <p>If this policy changes materially, we will update this page and the "last updated" date.</p>
+    <p>If this policy changes materially, we will post the revised policy on this page and update the "last updated" date shown at the top.</p>
 
     <h2>Contact</h2>
-    <p>Questions or requests: email <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a> or open an issue on our <a href="https://github.com/sprplate-app/spareplate-site/issues">GitHub page</a>.</p>
+    <p>For questions or requests, please contact us at <a href="mailto:contact@sorentechnologies.net">contact@sorentechnologies.net</a>. You may also open an issue on our <a href="https://github.com/sprplate-app/spareplate-site/issues">GitHub page</a> for non-private matters such as bug reports; please do not include personal information there, as GitHub issues are publicly visible.</p>
 
-    <footer>SparePlate is a product of Soren Technologies LLC · © 2026 Soren Technologies LLC · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a></footer>
+    <footer>© 2026 SparePlate · operated by Soren Technologies LLC · <a href="index.html">SparePlate</a> · <a href="terms.html">Terms of Use</a></footer>
   </div>
 </body>
 </html>
